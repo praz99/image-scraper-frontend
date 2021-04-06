@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Image Scraper
 
+> Image Scraper is a web app that takes an URL of an website as an input, validates the URL and returns an array of URLs of the images used in that website.   
+> It returns the appropriate error messages if the input URL is invalid, is empty or the website doesnot contain any images.   
+> This is the frontend part of the app.
+<div align="center">
+
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/praz99/image-scraper-frontend)
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/praz99/image-scraper-frontend/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/praz99/image-scraper-frontend/pulls)
+
+</div>
+
+## 📝 Contents
+
+<p align="center">
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#ss">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#features">Main Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+## 🔧 Built with<a name = "with"></a>
+- ReactJS
+- HTML 5 and CSS 3
+
+## API<a name= "backend"></a>
+
+The backend API for this project created by me and can be found in [github](https://github.com/praz99/image-scraper-backend).
+
+## Screenshots<a name = "ss"></a>
+### Home
+![screenshot](images/image-scraper-home.png)
+
+### Images (https://polebicycles.com)
+![screenshot](images/image-scraper-images.png)
+
+### Message (Invalid URL)
+![screenshot](images/image-scraper-invalid-url.png)
+
+### Message (Images Not Found)
+![screenshot](images/image-scraper-no-image.png)
+
+## Main Features<a name = "features"></a>
+
+- The app allows the users to enter an URL to the website.
+- It validates the URL.
+- Displays the appropriate messages for invalid or empty URLs.
+- Displays the appropriate message if the input URL does not contain any images.
+- Filters the null images URLs from the URL array.
+- Displays all the images present in the given website.
+
+## Getting Started <a name = "gs"></a>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Make sure you have [Node](https://nodejs.org/en/), installed in your computer.   
+Install [yarn](https://yarnpkg.com/getting-started/install). (or you can still use ```npm``` instead of ```yarn```.)
 
-In the project directory, you can run:
+To get a local copy of the repository please run the following commands on your terminal:
 
-### `yarn start`
+```
+$ git clone git@github.com:praz99/image-scraper-frontend.git
+```
+```
+$ cd image-scraper-frontend
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+$ yarn install
+```
+```
+$ yarn start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-### `yarn test`
+# Important
+- This app and its backend API has not been deployed yet.   
+- Before start using this app, please make sure you visit the [backend](https://github.com/praz99/image-scraper-backend) part of this project and follow the instructions given in the Readme file to have a running backend server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✒️  Authors <a name = "author"></a>
 
-### `yarn build`
+👤 **Prajwal Thapa**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Github: [praz99](https://github.com/praz99)
+- Twitter: [@thapa_praz](https://twitter.com/thapa_praz)
+- LinkedIn: [prazwal-thapa](https://linkedin.com/in/prazwal-thapa)
+- Email: t.prazwal@gmail.com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🤝 Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions, issues and feature requests are welcome!
 
-### `yarn eject`
+Feel free to check the [issues page](https://github.com/praz99/image-scraper-frontend/issues).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 👍 Show your support
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Give a ⭐️ if you like this project!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 📝 License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
